@@ -526,6 +526,14 @@ background: transparent;
 }
 }
 
+@media (min-width: 1900px) {
+.image-button-index {
+   min-width: calc(450px + 1vw);
+  min-height: calc(450px + 1vw);
+    width: 20vw;            /* 10% del ancho de la ventana */
+  height: 20vw;           /* igual que el ancho para que sea un círculo */
+}
+}
 
 .box-index > img {
   width: 100%;
