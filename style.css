@@ -543,52 +543,34 @@ font-weight: 800;
 
 footer
 {
-  display: grid;
-  grid-template-rows:.5fr .5fr .5fr ;
-  grid-template-columns: 1fr;
+  display: flex;
+  flex-direction: column;
   max-width: 100%;
-  min-width: 300px;
   margin-bottom: 0%;
   background: #ffffff;
   padding: 10px 0px;
 }
 
 
-@media (max-width: 700px) {
+@media (min-width: 1px) {
 footer{
-  display: grid;
-justify-items: center;
-justify-content: center;
-width: 100%;
-}
-}
-
-@media (max-width: 1920px) {
-footer{
- display: grid;
-  grid-template-rows:.5fr .5fr .5fr ;
-  grid-template-columns: 1fr;
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
   max-width: 100%;
-  min-width: 300px;
- background: #000;
-}
-}
-
-
-@media (min-width: 1921px) {
-footer{
- display: grid;
-  grid-template-rows:.5fr .5fr .5fr ;
-  grid-template-columns: 1fr;
-  max-width: 100%;
-  min-width: 300px;
   background: #000;
 }
 }
 
 @media (min-width: 1921px) {
-footer{ 
-  height: 50vh;
+footer{
+ display: grid;
+  grid-template-rows:.5fr .2fr .2fr ;
+  grid-template-columns: 1fr;
+  max-width: 100%;
+  min-width: 300px;
+  background: #000;
+}
 }
 }
 
@@ -637,26 +619,8 @@ justify-content: space-around;
 }
 
 
-.icon-logo
-{float: left;
-padding: 20px 20px;
-height: 200px;
-}
-
-
-}
-
-@media (min-width: 1px) {
-.icon-logo{
-  height: 60px;
-padding: 20px 10px;
-float: left;
-}
-}
-
-
 .icon-bottom-image {
-  height: calc(60px + 1vw);
+  height: calc(60px + 1.2vw);
   cursor: pointer;
 }
 
@@ -694,20 +658,16 @@ width: 100%;
 }
 
 
-@media (max-width: 700px) {
+@media (min-width: 1px) {
 .bottom-icons{
   background-color:transparent;
-width: 90%;
+width: 100%;
 display: flex;
 flex-direction: column;
 }
 }
 
-@media (min-width: 2400px) {
-.bottom-icons{
-  height: 20vh;
-  }
-}
+
 
 .bottom-menu
 {
@@ -722,7 +682,7 @@ flex-direction: column;
     text-transform: uppercase;
     text-align: center;
     justify-content: space-between;
-  padding: 20px 30px;
+  padding: 5px 5px;
 border-radius: 2px;
 justify-items: center;
 margin: 0px;
@@ -733,7 +693,8 @@ margin: 0px;
   display: grid;
    grid-template-columns: repeat(2, 1fr);
    grid-template-rows: repeat(2, 1fr);
-height: 100px;
+height: .2vh;
+min-height: 50px;
 width: 100%;
 justify-content: space-around;
 justify-items: center;
@@ -746,9 +707,9 @@ padding: 0px;
 
 @media (min-width: 300px) {
 .bottom-menu{
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-   grid-template-rows: repeat(2, 1fr);
+  display: flex;
+  flex-direction: row;
+   grid-template-columns: repeat(2, 1fr);
 height: 100px;
 width: 100%;
 justify-content: space-around;
@@ -760,9 +721,8 @@ padding: 0px;
 
 @media (min-width: 410px) {
 .bottom-menu{
-  display: grid;
-   grid-template-columns: repeat(2, 1fr);
-   grid-template-rows: repeat(2, 1fr);
+ display: flex;
+  flex-direction: row;
 height: 100px;
 width: 100%;
 justify-content: space-around;
@@ -774,8 +734,8 @@ padding: 0px;
 
 @media (min-width: 768px) {
 .bottom-menu{
-  display: grid;
-     grid-template-columns: repeat(2, 1fr);
+ display: flex;
+  flex-direction: row;
 height: 100px;
 width: 100%;
 justify-content: space-around;
@@ -810,7 +770,8 @@ padding: 0px;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
-  height: 200px;
+  justify-self: center;
+  align-self: center;
     font-size: calc(16px + 0.3vw);
   font-family: 'Plus Jakarta Sans', sans-serif;
   font-weight: 500;
@@ -823,11 +784,11 @@ padding: 0px;
   border-top-style: solid;
   border-top-color: white;
   border-top-width: 1px;
-  width: 100%;
+   width: 90vw;
 }
 
 
-@media (min-width: 300px) {
+@media (min-width: 1px) {
 .bottom-text {
 font-size: calc(12px + 0.2vw);
 padding: 10px 0px;
@@ -836,9 +797,9 @@ font-weight: 500;
 border-top-style: solid;
   border-top-color: white;
   border-top-width: 1px;
-  width: 100%;
+  width: 90vw;
   text-align: center;
-  height: 150px;
+  min-height: 30px;
 }
 
 @media (min-width: 410px) {
@@ -850,8 +811,20 @@ border-top-style: solid;
   border-top-style: solid;
   border-top-color: white;
   border-top-width: 1px;
-  width: 100%;
-  height: 50px;
+   width: 90vw;
+  min-height: 50px;
 }
 
 
+@media (min-width: 1920px) {
+.bottom-text {
+  font-size: calc(14px + 0.2vw);
+  color: white;
+  padding: 10px 0px;
+  font-weight: 500;
+  border-top-style: solid;
+  border-top-color: white;
+  border-top-width: 1px;
+  width: 90vw;
+  min-height: 60px;
+}
