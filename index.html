@@ -33,21 +33,26 @@
         </a>
       </div>
 
-        <div class="top-menu-productos"> <a href="index.html" class="logo-big-index">
-        <button class="btn-float-left ">
-        <a href="mailto:mencapc@gmail.com" class="button-top-texto">PRODUCTOS</a>  
-        </button>  
-        </a>
-      </div>
+<div class="top-menu-productos" onclick="document.getElementById('productos').scrollIntoView({ behavior: 'smooth' });">
+  <a class="button-top-texto-producto">PRODUCTOS</a>
+</div>
 
      <div class="buttons-right"> 
-<button class="button-whatsapp">
- <a href="https://wa.me/5214421199314?text=Hola%2C%20quiero%20recibir%20m%C3%A1s%20informaci%C3%B3n" target="_blank">
-  <img src="whatsapp.svg" alt="WhatsApp"> Teléfono
+<a href="https://wa.me/5214421199314?text=Hola%2C%20quiero%20recibir%20m%C3%A1s%20informaci%C3%B3n" 
+   target="_blank" class="button-whatsapp button-top-texto">
+  <img src="Whatsapp.svg" alt="WhatsApp">
+  <span class="button-text">Whatsapp</span>
 </a>
-</button>
-      <button class="button-whatsapp"> <a href="mailto:mencapc@gmail.com" class="button-top-texto">@Telefono</a>   </button>
-       <button class="button-whatsapp"> <a href="mailto:mencapc@gmail.com" class="button-top-texto">@Email</a>   </button>
+
+<a href="tel:4421234567" class="button-whatsapp button-top-texto">
+  <img src="Phone.svg" alt="Teléfono">
+  <span class="button-text">Teléfono</span>
+</a>
+
+<a href="ventas@arbolsa.mx" class="button-whatsapp button-top-texto">
+  <img src="at.svg" alt="Email">
+  <span class="button-text">Email</span>
+</a>
             </div>
        </div>
     </div>
@@ -74,7 +79,7 @@ Porque inspiramos a las empresas a adoptar prácticas sostenibles, a los consumi
 
 <section class="grid-general-index">
 
-       <section>   <a class="subtitulo-nuestros-productos">Nuestro Productos</a>  </section>
+       <section id="productos"> <a class="subtitulo-nuestros-productos">Nuestros Productos</a> </section>
 
 <section class="grid-wrapper-index">
        <img class=" image-button-index " src="AB_05REAL.png"> 
@@ -122,8 +127,8 @@ Papel Kraft 50 g/m² color café o blanco. <br> Opción palomera en bolsa #1 fon
     <a class="icon-logo" href="index.html"><img class="icon-bottom-image" src="Logo-Arbolsa-Blanco.png"></a>
  </div>
   <div class="bottom-menu">
-      <a href="index.html"><button class="btn-bottom" >ventas@arbolsa.mx</button> </a>
-      <a href="dictamenes-legales.html"><button class="btn-bottom" > Teléfono: 4421199314</button> </a>
+      <a href="mailto:ventas@arbolsa.mx"><button class="btn-bottom" >ventas@arbolsa.mx</button> </a>
+      <a href="tel:4421234567"><button class="btn-bottom" > Teléfono: 4421199314</button> </a>
  </div>
  <div class="bottom-text">
 ©Arbolsa. Todos los derechos reservados.
