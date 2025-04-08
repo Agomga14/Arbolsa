@@ -22,6 +22,7 @@
 .heroarea-index{
  min-height: 400px;
  height: 45vh;
+   max-height: 500px;
 }
 }
 
@@ -30,6 +31,7 @@
 .heroarea-index {
 min-height: 400px;
  height: 55vh;
+   max-height: 600px;
 }
 }
 
@@ -37,12 +39,14 @@ min-height: 400px;
 .heroarea-index {
 min-height: 400px;
  height: 85vh;
+ max-height: 900px;
 }
 }
 
 @media (min-width: 1400px) {
 .heroarea-index {
 min-height: 700px;
+ max-height: none;
 }
 }
 
