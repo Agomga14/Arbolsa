@@ -21,6 +21,9 @@ button {
   border-color: transparent;
 }
 /********************************HERO AREA**************************/
+.scroll-offset {
+  scroll-margin-top: 120px; /* Ajusta este valor según el tamaño de tu menú fijo */
+}
 
 .heroarea{
    display: grid;
