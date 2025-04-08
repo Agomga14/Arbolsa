@@ -20,7 +20,7 @@
 
 @media (min-width: 410px) {
 .heroarea-index{
- min-height: 420px;
+ min-height: 400px;
  height: 45vh;
 }
 }
@@ -29,7 +29,7 @@
 @media (min-width: 600px) {
 .heroarea-index {
 min-height: 400px;
- height: 65vh;
+ height: 55vh;
 }
 }
 
